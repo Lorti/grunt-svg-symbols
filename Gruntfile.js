@@ -1,6 +1,6 @@
 /*
  * grunt-svg-symbols
- * https://github.com/manuelwieser/grunt-svg-symbols
+ * https://github.com/Lorti/grunt-svg-symbols
  *
  * Copyright (c) 2015 Manuel Wieser
  * Licensed under the MIT license.
