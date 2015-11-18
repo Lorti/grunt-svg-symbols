@@ -1,12 +1,24 @@
 {
     "name": "grunt-svg-symbols",
     "description": "Generate an SVG icon system (based on `<symbol>`) of a specified folder",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "author": {
         "name": "Manuel Wieser",
         "email": "office@manuelwieser.com"
     },
-    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/Lorti/grunt-svg-symbols.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Lorti/grunt-svg-symbols/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/Lorti/grunt-svg-symbols/blob/master/LICENSE-MIT"
+        }
+    ],
     "engines": {
         "node": ">= 0.8.0"
     },
@@ -25,5 +37,8 @@
     },
     "peerDependencies": {
         "grunt": "~0.4.5"
-    }
+    },
+    "keywords": [
+        "gruntplugin"
+    ]
 }
