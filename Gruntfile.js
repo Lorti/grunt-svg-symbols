@@ -34,24 +34,15 @@ module.exports = function(grunt) {
         options: {
         },
         files: {
-          'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123']
+          'tmp/default_options': ['test/fixtures/mail.svg', 'test/fixtures/lock.svg']
         }
       },
       custom_options: {
         options: {
-          separator: ': ',
-          punctuation: ' !!!'
+          precision: 3
         },
         files: {
-          'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123']
-        }
-      },
-      common_icons: {
-        options: {
-          precision: 1
-        },
-        files: {
-          'commonicons.svg': ['/Users/manuelwieser/Documents/Projects/karriere_at/library/Karriere/CommonIcons/*.svg']
+          'tmp/custom_options': ['test/fixtures/*.svg']
         }
       }
     },
