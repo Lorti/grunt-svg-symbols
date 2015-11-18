@@ -6,6 +6,7 @@
         "name": "Manuel Wieser",
         "email": "office@manuelwieser.com"
     },
+    "license": "MIT",
     "engines": {
         "node": ">= 0.8.0"
     },
