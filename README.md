@@ -64,17 +64,17 @@ grunt.initConfig({
 
 ```html
 <svg width="0" height="0">
-  <symbol id="lock" viewBox="0 0 80 80">
-      <path d="M61.05 35.833V23.82C61.05 13.01 52.04 4 41.23 4h-.6-.602c-10.8...
-  </symbol>
   <symbol id="mail" viewBox="0 0 80 80">
-    <path d="M77.766 17.152l-25.115 21.1 25.09 23.665c.17-.462.266-.94.266-1....
+    <path d="M77.766 17.152l-25.115 21.1 25.09 23.665c.17-.462.266-.94.266..."/>
+  </symbol>
+  <symbol id="lock" viewBox="0 0 80 80">
+      <path d="M61.05 35.833V23.82C61.05 13.01 52.04 4 41.23 4h-.6-.602c-1..."/>
   </symbol>
 </svg>
 ```
 
-```
-<svg class="inputGroup-icon">
-    <use xlink:href="#lock"></use>
+```html
+<svg>
+    <use xlink:href="#mail"></use>
 </svg>
 ```
