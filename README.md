@@ -45,13 +45,13 @@ Specify the float precision used while optimizing.
 
 #### options.width
 Type: `Number`
-Default value: `24`
+Default value: `null`
 
 Define the width of the viewbox for all symbols (only necessary when the detection fails).
 
 #### options.height
 Type: `Number`
-Default value: `24`
+Default value: `null`
 
 Define the height of the viewbox for all symbols (only necessary when the detection fails).
 
