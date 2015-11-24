@@ -19,6 +19,7 @@ module.exports = function(grunt) {
 
     var options = this.options({
       precision: '1',
+      className: 'u-hidden',
       width: null,
       height: null
     });
@@ -62,7 +63,8 @@ module.exports = function(grunt) {
       var template = handlebars.compile(source);
 
       grunt.file.write(f.dest, template({
-        symbols: symbols
+        symbols: symbols,
+        className: options.className
       }));
 
       grunt.log.writeln('File "' + f.dest + '" created.');

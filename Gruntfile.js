@@ -40,6 +40,7 @@ module.exports = function(grunt) {
       custom_options: {
         options: {
           precision: 3,
+          className: 'u-display-none',
           width: 24,
           height: 24
         },

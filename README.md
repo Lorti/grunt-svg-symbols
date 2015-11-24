@@ -43,6 +43,12 @@ Default value: `1`
 
 Specify the float precision used while optimizing.
 
+#### options.className
+Type: `String`
+Default value: `u-hidden`
+
+Specify your `display: none` utility class.
+
 #### options.width
 Type: `Number`
 Default value: `null`
@@ -63,7 +69,7 @@ Define the height of the viewbox for all symbols (only necessary when the detect
 grunt.initConfig({
   svg_symbols: {
     options: {
-      precision: 2
+      precision: 3
     },
     files: {
       'icons.svg': ['**/*.svg'],
@@ -75,7 +81,7 @@ grunt.initConfig({
 #### Output Example
 
 ```html
-<svg width="0" height="0">
+<svg class="u-hidden">
   <symbol id="mail" viewBox="0 0 80 80">
     <path d="M77.766 17.152l-25.115 21.1 25.09 23.665c.17-.462.266-.94.266..."/>
   </symbol>
