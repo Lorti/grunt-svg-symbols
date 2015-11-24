@@ -39,7 +39,9 @@ module.exports = function(grunt) {
       },
       custom_options: {
         options: {
-          precision: 3
+          precision: 3,
+          width: 24,
+          height: 24
         },
         files: {
           'tmp/custom_options': ['test/fixtures/*.svg']

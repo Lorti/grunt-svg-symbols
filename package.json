@@ -1,7 +1,7 @@
 {
     "name": "grunt-svg-symbols",
     "description": "Generate an SVG icon system (based on `<symbol>`) of a specified folder",
-    "version": "0.1.10",
+    "version": "0.1.11",
     "author": {
         "name": "Manuel Wieser",
         "email": "office@manuelwieser.com"
@@ -39,6 +39,13 @@
         "grunt": "~0.4.5"
     },
     "keywords": [
-        "gruntplugin"
+        "gruntplugin",
+        "svg",
+        "symbols",
+        "icon",
+        "icons",
+        "map",
+        "sprite",
+        "sprites"
     ]
 }

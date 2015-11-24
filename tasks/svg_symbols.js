@@ -18,7 +18,9 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('svg_symbols', 'Generate an SVG icon system (based on `<symbol>`) of a specified folder', function() {
 
     var options = this.options({
-      precision: '1'
+      precision: '1',
+      width: null,
+      height: null
     });
 
     var optim = new svgo({
@@ -49,8 +51,8 @@ module.exports = function(grunt) {
           symbols.push({
             name: name,
             content: content,
-            width: result.info.width,
-            height: result.info.height
+            width: options.width || result.info.width,
+            height: options.height || result.info.height
           });
         });
 
