@@ -45,4 +45,13 @@ exports.svg_symbols = {
 
     test.done();
   },
+  current_color: function(test) {
+    test.expect(1);
+
+    var actual = grunt.file.read('tmp/current_color');
+    var expected = grunt.file.read('test/expected/current_color');
+    test.equal(actual, expected, 'should show, that fill and stroke attributes are replaced.');
+
+    test.done();
+  }
 };

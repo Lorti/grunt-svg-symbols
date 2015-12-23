@@ -10,6 +10,7 @@
 
 var path = require('path');
 
+var cheerio = require('cheerio');
 var svgo = require('svgo');
 var handlebars = require('handlebars');
 
@@ -20,6 +21,7 @@ module.exports = function(grunt) {
     var options = this.options({
       precision: '1',
       className: 'u-hidden',
+      currentColor: false,
       width: null,
       height: null
     });
@@ -48,10 +50,16 @@ module.exports = function(grunt) {
 
         optim.optimize(grunt.file.read(filepath), function (result) {
           var name = path.basename(filepath, '.svg');
-          var content = result.data.match(/<svg.*?>(.*?)<\/svg>/)[1];
+          var $ = cheerio.load(result.data);
+
+          if (options.currentColor) {
+            $('[fill]').attr('fill', 'currentColor');
+            $('[stroke]').attr('stroke', 'currentColor');
+          }
+
           symbols.push({
             name: name,
-            content: content,
+            content: $('svg').html(),
             width: options.width || result.info.width,
             height: options.height || result.info.height
           });

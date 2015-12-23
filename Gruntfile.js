@@ -47,6 +47,14 @@ module.exports = function(grunt) {
         files: {
           'tmp/custom_options': ['test/fixtures/*.svg']
         }
+      },
+      current_color: {
+        options: {
+          currentColor: true
+        },
+        files: {
+          'tmp/current_color': ['test/fixtures/mail.svg', 'test/fixtures/lock.svg']
+        }
       }
     },
 

@@ -38,25 +38,32 @@ grunt.initConfig({
 ### Options
 
 #### options.precision
-Type: `Number`
+Type: `Number`<br>
 Default value: `1`
 
 Specify the float precision used while optimizing.
 
+
+#### options.currentColor
+Type: `Boolean`<br>
+Default value: `false`
+
+Sets the value of all `fill` and `stroke` attributes to `currentColor`.
+
 #### options.className
-Type: `String`
+Type: `String`<br>
 Default value: `u-hidden`
 
-Specify your `display: none` utility class.
+Specify your `display: none;` utility class.
 
 #### options.width
-Type: `Number`
+Type: `Number`<br>
 Default value: `null`
 
 Define the width of the viewbox for all symbols (only necessary when the detection fails).
 
 #### options.height
-Type: `Number`
+Type: `Number`<br>
 Default value: `null`
 
 Define the height of the viewbox for all symbols (only necessary when the detection fails).
