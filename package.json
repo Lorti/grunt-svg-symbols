@@ -1,10 +1,11 @@
 {
   "name": "grunt-svg-symbols",
   "description": "Generate an SVG icon system (based on `<symbol>`) of a specified folder",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "author": {
     "name": "Manuel Wieser",
-    "email": "office@manuelwieser.com"
+    "email": "office@manuelwieser.com",
+    "url": "http://manu.ninja/"
   },
   "repository": {
     "type": "git",
