@@ -50,7 +50,7 @@ exports.svg_symbols = {
 
     var actual = grunt.file.read('tmp/current_color');
     var expected = grunt.file.read('test/expected/current_color');
-    test.equal(actual, expected, 'should show, that fill and stroke attributes are replaced.');
+    test.equal(actual, expected, 'should replace fill and stroke attributes.');
 
     test.done();
   }

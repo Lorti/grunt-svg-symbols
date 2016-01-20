@@ -67,15 +67,24 @@ module.exports = function(grunt) {
 
       });
 
-      var source = grunt.file.read(__dirname + '/../template.hbs', 'utf8');
+      var source = grunt.file.read(__dirname + '/../templates/template.hbs', 'utf8');
       var template = handlebars.compile(source);
-
-      grunt.file.write(f.dest, template({
+      var system = template({
         symbols: symbols,
         className: options.className
-      }));
+      });
 
+      grunt.file.write(f.dest, system);
       grunt.log.writeln('File "' + f.dest + '" created.');
+
+      source = grunt.file.read(__dirname + '/../templates/debug.hbs', 'utf8');
+      template = handlebars.compile(source);
+      var parse = path.parse(f.dest);
+
+      grunt.file.write(parse.dir + '/' + parse.name + '.html', template({
+        system: system,
+        symbols: symbols
+      }));
 
     });
   });
