@@ -22,15 +22,25 @@ module.exports = function(grunt) {
       precision: '1',
       className: 'u-hidden',
       currentColor: false,
+      removeAttrs: null,
       width: null,
-      height: null
+      height: null,
+      foo: 'bar'
     });
+
+    var svgoPlugins = [{
+      removeTitle: true
+    }];
+
+    if (options.removeAttrs) {
+      svgoPlugins.push({
+        removeAttrs: { attrs: options.removeAttrs }
+      });
+    }
 
     var optim = new svgo({
       floatPrecision: options.precision,
-      plugins: [{
-        removeTitle: true
-      }]
+      plugins: svgoPlugins
     });
 
     this.files.forEach(function(f) {

@@ -55,6 +55,14 @@ module.exports = function(grunt) {
         files: {
           'tmp/current_color': ['test/fixtures/mail.svg', 'test/fixtures/lock.svg']
         }
+      },
+      remove_attrs: {
+        options: {
+          removeAttrs: '(fill|fill-rule)'
+        },
+        files: {
+          'tmp/remove_attrs': ['test/fixtures/mail.svg', 'test/fixtures/lock.svg']
+        }
       }
     },
 
