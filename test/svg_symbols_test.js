@@ -20,7 +20,7 @@ var grunt = require('grunt');
     test.throws(block, [error], [message])
     test.doesNotThrow(block, [error], [message])
     test.ifError(value)
-*/
+ */
 
 exports.svg_symbols = {
   setUp: function(done) {
@@ -51,6 +51,15 @@ exports.svg_symbols = {
     var actual = grunt.file.read('tmp/current_color');
     var expected = grunt.file.read('test/expected/current_color');
     test.equal(actual, expected, 'should replace fill and stroke attributes.');
+
+    test.done();
+  },
+  remove_attrs: function(test) {
+    test.expect(1);
+
+    var actual = grunt.file.read('tmp/remove_attrs');
+    var expected = grunt.file.read('test/expected/remove_attrs');
+    test.equal(actual, expected, 'should remove fill and fill-rule attributes.');
 
     test.done();
   }
