@@ -58,7 +58,7 @@ module.exports = function(grunt) {
       },
       remove_attrs: {
         options: {
-          removeAttrs: '(fill|fill-rule)'
+          removeAttrs: 'fill|fill-rule'
         },
         files: {
           'tmp/remove_attrs': ['test/fixtures/mail.svg', 'test/fixtures/lock.svg']

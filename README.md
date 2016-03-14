@@ -56,6 +56,12 @@ Default value: `u-hidden`
 
 Specify your `display: none;` utility class.
 
+#### options.removeAttrs
+Type: `String`<br>
+Default value: `null`
+
+Remove attributes by providing a regular expression pattern.
+
 #### options.width
 Type: `Number`<br>
 Default value: `null`
