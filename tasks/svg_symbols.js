@@ -24,8 +24,7 @@ module.exports = function(grunt) {
       currentColor: false,
       removeAttrs: null,
       width: null,
-      height: null,
-      foo: 'bar'
+      height: null
     });
 
     var svgoPlugins = [{
