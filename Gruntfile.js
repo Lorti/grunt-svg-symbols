@@ -53,7 +53,7 @@ module.exports = function(grunt) {
           currentColor: true
         },
         files: {
-          'tmp/current_color': ['test/fixtures/mail.svg', 'test/fixtures/lock.svg']
+          'tmp/current_color': ['test/fixtures/mail.svg', 'test/fixtures/clock.svg']
         }
       },
       remove_attrs: {

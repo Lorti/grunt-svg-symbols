@@ -62,8 +62,8 @@ module.exports = function(grunt) {
           var $ = cheerio.load(result.data);
 
           if (options.currentColor) {
-            $('[fill]').attr('fill', 'currentColor');
-            $('[stroke]').attr('stroke', 'currentColor');
+            $('[fill]').not('[fill="none"]').attr('fill', 'currentColor');
+            $('[stroke]').not('[stroke="none"]').attr('stroke', 'currentColor');
           }
 
           symbols.push({
