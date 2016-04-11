@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 
     // Before generating any new files, remove any previously-created files.
     clean: {
-      tests: ['tmp']
+      tests: ['tmp', 'tmp.svg', 'tmp.html']
     },
 
     // Configuration to be run (and then tested).
@@ -35,6 +35,13 @@ module.exports = function(grunt) {
         },
         files: {
           'tmp/default_options': ['test/fixtures/mail.svg', 'test/fixtures/lock.svg']
+        }
+      },
+      current_folder: {
+        options: {
+        },
+        files: {
+          'tmp.svg': ['test/fixtures/mail.svg', 'test/fixtures/lock.svg']
         }
       },
       custom_options: {

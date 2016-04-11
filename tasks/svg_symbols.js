@@ -90,7 +90,7 @@ module.exports = function(grunt) {
       template = handlebars.compile(source);
       var parse = path.parse(f.dest);
 
-      grunt.file.write(parse.dir + '/' + parse.name + '.html', template({
+      grunt.file.write((parse.dir.length ? parse.dir + '/' : '') + parse.name + '.html', template({
         system: system,
         symbols: symbols
       }));

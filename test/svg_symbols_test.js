@@ -36,6 +36,15 @@ exports.svg_symbols = {
 
     test.done();
   },
+  current_folder: function(test) {
+    test.expect(1);
+
+    var actual = grunt.file.read('tmp.svg');
+    var expected = grunt.file.read('test/expected/default_options');
+    test.equal(actual, expected, 'should also work at the project root level.');
+
+    test.done();
+  },
   custom_options: function(test) {
     test.expect(1);
 
