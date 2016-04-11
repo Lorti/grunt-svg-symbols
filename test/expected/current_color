@@ -1,6 +1,6 @@
 <svg class="u-hidden" xmlns="http://www.w3.org/2000/svg">
     <symbol id="mail" viewBox="0 0 80 80">
-        <path d="M77.8 17.2l-25 21 25 23.7.2-1.5v-42c0-.5 0-1-.2-1.3zM39.5 48.7L29.7 41 4.4 64.7l1.2.2h67.8c.4 0 .8 0 1.2-.2l-25.3-24-9.8 8zM33 38l6.5 5.3 10-8 25.2-21c-.4-.2-1-.3-1.3-.3H5.6c-.4 0-1 0-1.3.2l25.3 21.2L33 38zM1 17.3L1 18.5v42c0 .5 0 1 .3 1.4l25-23.7-25-21z" fill="currentColor" fill-rule="evenodd"></path>
+        <path d="M77.8 17.2l-25.1 21 25 23.7c.2-.4.3-1 .3-1.4v-42c0-.5 0-1-.2-1.3zM39.5 48.7L29.7 41 4.4 65l1.2.1h67.8c.4 0 .8 0 1.2-.2L49.3 41l-9.8 7.8zM33 38.1l6.6 5.2 10-8 25.2-21c-.4-.2-.9-.3-1.3-.3H5.6c-.4 0-.9 0-1.3.2l25.3 21.2 3.3 2.7zM1.2 17L1 18.6v42c0 .5.1 1 .3 1.4l25-23.6-25-21.1z" fill="currentColor" fill-rule="evenodd"></path>
     </symbol>
     <symbol id="clock" viewBox="0 0 24 24">
         <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"><circle cx="12" cy="12" r="11"></circle><path d="M11.5 6.5V12l6 5.5"></path></g>
