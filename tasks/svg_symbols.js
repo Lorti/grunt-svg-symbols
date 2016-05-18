@@ -63,6 +63,7 @@ module.exports = function(grunt) {
 
           if (options.currentColor) {
             $('[fill]').not('[fill="none"]').attr('fill', 'currentColor');
+            $(':not([fill])').attr('fill', 'currentColor');
             $('[stroke]').not('[stroke="none"]').attr('stroke', 'currentColor');
           }
 
