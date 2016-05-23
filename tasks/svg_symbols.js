@@ -63,8 +63,13 @@ module.exports = function(grunt) {
 
           if (options.currentColor) {
             $('[fill]').not('[fill="none"]').attr('fill', 'currentColor');
-            $(':not([fill])').attr('fill', 'currentColor');
             $('[stroke]').not('[stroke="none"]').attr('stroke', 'currentColor');
+
+            $(':not([fill])').each(function() {
+              if ($(this).parents('g[fill]').length === 0) {
+                $(this).attr('fill', 'currentColor');
+              }
+            });
           }
 
           symbols.push({

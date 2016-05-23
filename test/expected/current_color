@@ -3,6 +3,9 @@
         <path d="M77.8 17.2l-25.1 21 25 23.7c.2-.4.3-1 .3-1.4v-42c0-.5 0-1-.2-1.3zM39.5 48.7L29.7 41 4.4 65l1.2.1h67.8c.4 0 .8 0 1.2-.2L49.3 41l-9.8 7.8zM33 38.1l6.6 5.2 10-8 25.2-21c-.4-.2-.9-.3-1.3-.3H5.6c-.4 0-.9 0-1.3.2l25.3 21.2 3.3 2.7zM1.2 17L1 18.6v42c0 .5.1 1 .3 1.4l25-23.6-25-21.1z" fill="currentColor" fill-rule="evenodd"></path>
     </symbol>
     <symbol id="clock" viewBox="0 0 24 24">
-        <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"><circle cx="12" cy="12" r="11" fill="currentColor"></circle><path d="M11.5 6.5V12l6 5.5" fill="currentColor"></path></g>
+        <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"><circle cx="12" cy="12" r="11"></circle><path d="M11.5 6.5V12l6 5.5"></path></g>
+    </symbol>
+    <symbol id="upload" viewBox="0 0  ">
+        <path d="M20.2 10.8v-.4A6.4 6.4 0 0 0 8.1 7.7a3 3 0 0 0-1.8-.6A3 3 0 0 0 3.4 10l.1.9a4.1 4.1 0 0 0-2.1 3.7c0 2.3 1.9 4.2 4.2 4.3H10.8v-4.1H8c-.4 0-.5-.3-.3-.6l3.7-4.4c.3-.3.7-.3 1 0l3.7 4.4c.3.3.1.6-.3.6H13v4.1h5.3c2.3 0 4.2-1.9 4.2-4.2.3-1.8-.8-3.3-2.3-3.9z" fill="currentColor"></path>
     </symbol>
 </svg>
