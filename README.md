@@ -74,6 +74,12 @@ Default value: `null`
 
 Define the height of the viewbox for all symbols (only necessary when the detection fails).
 
+#### options.preserveViewBox
+Type: `Boolean`<br>
+Default value: `false`
+
+Use `viewBox` defined on SVG and ignore width and height options.
+
 ### Examples
 
 #### Usage Example
