@@ -71,5 +71,14 @@ exports.svg_symbols = {
     test.equal(actual, expected, 'should remove fill and fill-rule attributes.');
 
     test.done();
+  },
+  preserve_viewbox: function(test) {
+    test.expect(1);
+
+    var actual = grunt.file.read('tmp/preserve_viewbox');
+    var expected = grunt.file.read('test/expected/preserve_viewbox');
+    test.equal(actual, expected, 'should preserve viewbox attribute.');
+
+    test.done();
   }
 };

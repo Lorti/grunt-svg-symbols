@@ -60,6 +60,7 @@ module.exports = function(grunt) {
         optim.optimize(grunt.file.read(filepath), function (result) {
           var name = path.basename(filepath, '.svg');
           var $ = cheerio.load(result.data);
+          var viewBox;
 
           if (options.currentColor) {
             $('[fill]').not('[fill="none"]').attr('fill', 'currentColor');
@@ -72,11 +73,20 @@ module.exports = function(grunt) {
             });
           }
 
+          if (options.preserveViewbox) {
+            // extract width and height from viewport
+            // note cheerio lowercases viewBox to viewbox
+            viewBox = $('svg').attr('viewbox');
+          }
+
+          if (! viewBox) {
+            viewBox = '0 0 ' + (options.width || result.info.width || '') + ' ' + (options.height || result.info.height || '');
+          }
+
           symbols.push({
             name: name,
             content: $('svg').html(),
-            width: options.width || result.info.width,
-            height: options.height || result.info.height
+            viewBox: viewBox
           });
         });
 

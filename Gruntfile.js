@@ -70,6 +70,14 @@ module.exports = function(grunt) {
         files: {
           'tmp/remove_attrs': ['test/fixtures/mail.svg', 'test/fixtures/lock.svg']
         }
+      },
+      preserve_viewbox: {
+        options: {
+          preserveViewbox: true
+        },
+        files: {
+          'tmp/preserve_viewbox': ['test/fixtures/mail2.svg', 'test/fixtures/lock2.svg']
+        }
       }
     },
 
