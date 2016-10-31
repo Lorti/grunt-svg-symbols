@@ -84,8 +84,10 @@ grunt.initConfig({
     options: {
       precision: 3
     },
-    files: {
-      'icons.svg': ['**/*.svg'],
+    your_target: {
+      files: {
+        'icons.svg': ['**/*.svg'],
+      },
     },
   },
 });
