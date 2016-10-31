@@ -73,7 +73,7 @@ module.exports = function(grunt) {
       },
       preserve_viewbox: {
         options: {
-          preserveViewbox: true
+          preserveViewBox: true
         },
         files: {
           'tmp/preserve_viewbox': ['test/fixtures/mail2.svg', 'test/fixtures/lock2.svg']

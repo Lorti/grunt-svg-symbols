@@ -73,7 +73,7 @@ module.exports = function(grunt) {
             });
           }
 
-          if (options.preserveViewbox) {
+          if (options.preserveViewBox) {
             // extract width and height from viewport
             // note cheerio lowercases viewBox to viewbox
             viewBox = $('svg').attr('viewbox');

@@ -74,7 +74,7 @@ Default value: `null`
 
 Define the height of the viewbox for all symbols (only necessary when the detection fails).
 
-#### options.preserveViewbox
+#### options.preserveViewBox
 Type: `Boolean`<br>
 Default value: `false`
 
