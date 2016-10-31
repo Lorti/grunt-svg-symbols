@@ -11,7 +11,7 @@
 var path = require('path');
 
 var cheerio = require('cheerio');
-var svgo = require('svgo');
+var SVGO = require('svgo');
 var handlebars = require('handlebars');
 
 module.exports = function(grunt) {
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
       });
     }
 
-    var optim = new svgo({
+    var optim = new SVGO({
       floatPrecision: options.precision,
       plugins: svgoPlugins
     });
@@ -74,13 +74,17 @@ module.exports = function(grunt) {
           }
 
           if (options.preserveViewBox) {
-            // extract width and height from viewport
-            // note cheerio lowercases viewBox to viewbox
+            // Cheerio lowercases `viewBox` to `viewbox`.
             viewBox = $('svg').attr('viewbox');
           }
 
-          if (! viewBox) {
-            viewBox = '0 0 ' + (options.width || result.info.width || '') + ' ' + (options.height || result.info.height || '');
+          if (!viewBox) {
+            viewBox = [
+              0,
+              0,
+              options.width || result.info.width || '',
+              options.height || result.info.height || ''
+            ].join(' ');
           }
 
           symbols.push({

@@ -9,6 +9,10 @@
   },
   "contributors": [
     {
+      "name": "Ben Boyle",
+      "email": "benjamins.boyle@gmail.com"
+    },
+    {
       "name": "Martin Lenzelbauer",
       "email": "contact@mlenzelbauer.at"
     }
@@ -27,7 +31,7 @@
     }
   ],
   "engines": {
-    "node": ">= 0.8.0"
+    "node": ">=0.10.0"
   },
   "scripts": {
     "test": "grunt test"
@@ -38,13 +42,10 @@
     "svgo": "~0.6.0"
   },
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-clean": "^0.5.0",
-    "grunt-contrib-jshint": "^0.9.2",
-    "grunt-contrib-nodeunit": "^0.3.3"
-  },
-  "peerDependencies": {
-    "grunt": ">=0.4.0"
+    "grunt": "^1.0.0",
+    "grunt-contrib-internal": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-nodeunit": "^1.0.0"
   },
   "keywords": [
     "gruntplugin",
