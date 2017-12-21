@@ -1,21 +1,18 @@
 <style>
-    .u-hidden{
+    svg:first-child {
         display:none;
     }
-
-    code{
-        font-familly:monospace;
+    code {
+        font-family:monospace;
         font-size:11px;
         color:#666;
         display:block;
     }
-
-    .wrap{
+    .wrap {
         display: flex;
         flex-wrap: wrap;
     }
-
-    div.item{
+    .item {
         position:relative;
         display: inline-block;
         margin:10px;
@@ -23,7 +20,7 @@
         height: 100px;
         text-align:center;
     }
-    div.item>svg {
+    svg.svg-item {
         display: inline-block;
         border: 1px solid #eee;
         width: 60px;
@@ -36,7 +33,7 @@
 <div class="wrap">
 {{#each symbols}}
     <div class="item">
-        <svg>
+        <svg class="svg-item">
             <use xlink:href="#{{name}}"></use>
         </svg>
         <code>#{{name}}</code>
