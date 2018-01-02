@@ -3,12 +3,12 @@
         display: none;
     }
     code {
+        display: block;
         font-family: monospace;
         font-size: 11px;
-        color: #666;
-        display: block;
+        color: hsl(0, 0%, 40%);
     }
-    .wrap {
+    .grid {
         display: flex;
         flex-wrap: wrap;
     }
@@ -20,23 +20,26 @@
         height: 100px;
         text-align: center;
     }
-    .svg-item {
+    .icon {
         display: inline-block;
-        border: 1px solid #eee;
+        border: 1px solid hsl(0, 0%, 90%);
         width: 60px;
         height: 60px;
         margin-bottom: 10px;
     }
 </style>
 
-{{{system}}}
-<div class="wrap">
-{{#each symbols}}
-    <div class="item">
-        <svg class="svg-item">
-            <use xlink:href="#{{name}}"></use>
-        </svg>
-        <code>#{{name}}</code>
-    </div>
-{{/each}}
+<div class="u-hidden">
+    {{{system}}}
+</div>
+
+<div class="grid">
+    {{#each symbols}}
+        <div class="item">
+            <svg class="icon">
+                <use xlink:href="#{{name}}"></use>
+            </svg>
+            <code>#{{name}}</code>
+        </div>
+    {{/each}}
 </div>
